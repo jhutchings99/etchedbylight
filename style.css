@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(7, minmax(0, 200px)) minmax(0px, 1fr);
+    background-color: white;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px black;
+    z-index: 999999999;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.1s ease 0s;
+}
+
+.navlinks li a:hover {
+    border-bottom: solid 3px #FFCD5F;
+}
+
+.contactbutton {
+    padding: 15px 20px;
+    background-color: rgba(255, 205, 95);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+
+.contactbutton:hover {
+    background-color: rgba(255, 205, 95, 0.8);
+}
+
+.ec-cart-widget {
+    transform: translateY(8px);
+}
+
+#my-store-68248182 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#herocover {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    z-index: 10;
+}
+
+#homehero {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url(images/homehero.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shopbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Be Vietnam', sans-serif;
+    border: 10px solid #FFCD5F;
+    border-radius: 20px;
+    padding: 10px 20px;
+    z-index: 11;
+}
+
+#shopbutton:hover {
+    box-shadow: 0px 5px 5px black;
+}
+
+main {
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
+    font-family: 'Be Vietnam', sans-serif;
+    height: 40rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+}
+
+.aboutus {
+    text-align: left;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 50px;
+}
+
+.aboutusp {
+    text-align: left;
+    width: 50%;
+    display: block;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.whatwedo {
+    text-align: right;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to left, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 50px;
+}
+
+.whatwedop {
+    text-align: right;
+    width: 50%;
+    display: block;
+    font-size: 30px;
+    float: right;
+}
+
+.materials{
+    text-align: left;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 50px;
+}
+
+.materialsp {
+    text-align: left;
+    width: 80%;
+    display: block;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.previouswork {
+    text-align: right;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to left, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 50px;
+}
+
+.previousworkp {
+    text-align: right;
+    width: 50%;
+    display: block;
+    font-size: 30px;
+    float: right;
+}
+
+.moon {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    height: 313px;
+    width: 313px;
+    padding-top: 10rem;
+    padding-bottom: 50px;
+}
+
+.bear {
+    grid-row: 6 / 7;
+    grid-column: 6 / 7;
+    padding-top: 10rem;
+    padding-bottom: 50px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+.footerwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline-flex;
+    list-style: none;
+}
+
+footer li {
+    padding: 0px 15px;
+    margin: 5px;
+}
+
+footer a {
+    font-size: 20px;
+    color: white;
+}
+
+.fa {
+    color: white;
+    font-size: 50px;
+    width: 50px;
+}
+
+footer p {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactpagetext {
+    text-align: left;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 40px;
+}
+
+.contactpagetextp {
+    text-align: left;
+    font-size: 25px;
+    border: none;
+}
+
+.thankyou {
+    text-align: left;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 40px;
+}
+
+.thankyoup {
+    text-align: left;
+    font-size: 25px;
+    border: none;
+    padding-bottom: 40%;
+}
+
+.error {
+    text-align: left;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #FFCD5F, white);
+    border-image-slice: 1;
+    font-size: 40px;
+}
+
+.errorp {
+    text-align: left;
+    font-size: 25px;
+    border: none;
+    padding-bottom: 40%;
+}
+
+.errorp a {
+    cursor: pointer;
+    color: #FFCD5F;
+    text-decoration: underline;
+}
+
+#contactform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px black;
+    padding: 100px;
+    margin: 100px;
+    flex-direction: column;
+}
+
+.formgroup {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.formgroup input {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(207, 207, 207);
+}
+
+.formgroup textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(207, 207, 207);
+}
+
+textarea {
+    resize: vertical;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.submitbutton {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 60px;
+    font-size: 25px;
+    background-color: #FFCD5F;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.1s ease 0s;
+}
+
+.submitbutton:hover {
+    background-color: rgba(255, 205, 95, 0.8);
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-pictures {
+    width: 500px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+figcaption {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 30px;
+    text-align: center; 
+    padding: 5px;
+}
+
+figure {
+    box-shadow: 0px 0px 10px black;
+}
+
+html::-webkit-scrollbar {
+    width: 0.75vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 205, 95);
+    border-radius: 60px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 205, 95, 0.8);
+    border-radius: 60px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) 768px minmax(0px, 1fr);
+    }
+
+    #homehero {
+        height: 300px;
+    }
+
+    #herocover {
+        height: 300px;
+    }
+
+    .aboutus {
+        margin: 2%;
+    }
+    
+    .aboutusp {
+        width: 80%;
+        margin: 2%;
+    }
+    
+    .whatwedo {
+        margin: 2%;
+    }
+    
+    .whatwedop {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .materials {
+        margin: 2%;
+    }
+    
+    .materialsp {
+        width: 80%;
+        margin: 2%;
+    }
+    
+    .previouswork {
+        margin: 2%;
+    }
+    
+    .previousworkp {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .thankyou {
+        margin: 2%;
+    }
+
+    .thankyoup {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .error {
+        margin: 2%;
+    }
+
+    .errorp {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .moon {
+        height: 234.75px;
+        width: 234.75px;
+        grid-column: 2 / 3;
+        padding-left: 10%;
+    }
+    
+    .bear {
+        height: 234.75px;
+        grid-column: 2 / 3;
+        padding-left: 60%;
+    }
+
+    #contactform {
+        width: 100%;
+        margin: 1%;
+        padding: 5px;
+    }
+
+    .formgroup {
+        width: 95%;
+        margin: 1%;
+    }
+
+    .formgroup label {
+        font-size: 25px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+}
+
+  @media only screen and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    header {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    #logo {
+        display: inline-block;
+    }
+
+    .navlinks li {
+        display: block;
+        padding-right: 50px;
+    }
+
+    .contactbutton {
+        display: inline-block;
+    }
+
+    #homehero {
+        display: none;
+    }
+
+    #herocover {
+        display: none;
+    }
+
+    .moon {
+        grid-column: 1 / -1;
+        padding-bottom: 40px;
+    }
+
+    .bear {
+        display: none;
+    }
+
+    .aboutus {
+        margin: 5%;
+        font-size: 35px;
+    }
+    
+    .aboutusp {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+    
+    .whatwedo {
+        margin: 5%;
+        font-size: 35px;
+    }
+    
+    .whatwedop {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+
+    .materials {
+        margin: 5%;
+        font-size: 35px;
+    }
+    
+    .materialsp {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+    
+    .previouswork {
+        margin: 5%;
+        font-size: 35px;
+    }
+    
+    .previousworkp {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+
+    .thankyou {
+        margin: 5%;
+        font-size: 35px;
+    }
+
+    .thankyoup {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+
+    .error {
+        margin: 5%;
+        font-size: 35px;
+    }
+
+    .errorp {
+        width: 95%;
+        margin: 5%;
+        font-size: 25px;
+    }
+
+    .errorp a {
+        font-size: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .gallery-pictures {
+        width: 300px;
+        object-fit: cover;
+        padding: 20px;
+    }
+    
+    figcaption {
+        font-family: 'Be Vietnam', sans-serif;
+        font-size: 20px;
+        text-align: center; 
+        padding: 3px;
+    }
+    
+    figure {
+        box-shadow: 0px 0px 10px black;
+    }
+
+    #contactform {
+        width: 100%;
+        margin: 1%;
+        padding: 2px;
+    }
+
+    .formgroup {
+        width: 95%;
+        margin: 1%;
+    }
+
+    .formgroup label {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
+}
